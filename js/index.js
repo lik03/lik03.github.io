@@ -5,10 +5,10 @@ var bgIconText = document.getElementsByClassName("bgIconText");
 
 window.onmousewheel=document.onmousewheel=(e)=>{
 	if(e.wheelDelta<0){
-		console.log("鼠标滚轮后滚")
+		console.log("咻~")
 		bg.classList.add('up')
 	}else if(e.wheelDelta>0){
-		console.log("鼠标滚轮前滚")
+		console.log("卟~")
 		bg.classList.remove('up')
 	}
 }
