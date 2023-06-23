@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			#text{
+				font-size: 40px;
+				margin: 90px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- <div>document.write(demoList[1].name)</div> -->
+		<div class="box">new page</div>
+		<div id="main"></div>
+		<div> kdhsal</div>
+		<div class="set"></div>
+		<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.js"></script> -->
+		<script src="../js/new_file.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			var demoList = [
+				{
+					name:"name",
+					new:"set"
+				},
+				{
+					name:"elden ring",
+					new:"get"
+				}
+			]
+			console.log(demoList)
+			var set = document.getElementsByClassName("set")[0];
+			// document.write(demoList[1].name)
+			var main = document.getElementById("main")
+			var str = ''
+			
+			document.write("不适合干这行")
+			
+			for(var i=0;i<demoList.length;i++){
+				str += "<div> " + demoList[i].name + "</div>" +
+					"<div id='text'>" + demoList[i].new + "</div>"
+			}
+			main.innerHTML = str
+			
+			set.innerHTML = str
+		</script>
+	</body>
+</html>

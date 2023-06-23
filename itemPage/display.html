@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智慧窗帘-共享生活的美</title>
+	<link rel="icon" href="../img/icon.ico" type="img/x-ico" />
+	<link rel="stylesheet" href="../css/curtain.css"/>
+</head>
+
+<body>
+    <div class="bigbox">
+        <h2>新品展架</h2>
+        <h4>TRAVEL DESTINATION</h4>
+        <h5>————当季热门————</h5>
+        <div class="heard">
+            <ul>
+                <li class="ulli colorful" onclick='newbox(0)'>爆款</li>
+                <li class="ulli" onclick='newbox(1)'>旋转魔方</li>
+                <li class="ulli" onclick='newbox(2)'>雅致版</li>
+                <li class="ulli" onclick='newbox(3)'>标准版</li>
+                <li class="ulli" onclick='newbox(4)'>更多</li>
+            </ul>
+        </div>
+        <div style="height: 50px;">
+        </div>
+		<div>
+			<div class="boxOne">
+				<div class="img1">
+				    <img src="../img/curtainImg/wall1.jpg">
+				    <img src="../img/curtainImg/wall2.jpg">
+				    <img src="../img/curtainImg/wall1.jpg">
+				
+				</div>
+				<div class="img1">
+				    <img src="../img/curtainImg/wall2.jpg">
+				    <img src="../img/curtainImg/wall1.jpg">
+				    <img src="../img/curtainImg/wall2.jpg">
+				</div>
+			</div>
+			
+			<div class="boxOne" style="display: none;">
+				<div class="img1">
+				    <img src="../img/curtainImg/wall3.jpg">
+				    <img src="../img/curtainImg/wall4.jpg">
+				    <img src="../img/curtainImg/wall3.jpg">
+				
+				</div>
+				<div class="img1">
+				    <img src="../img/curtainImg/wall4.jpg">
+				    <img src="../img/curtainImg/wall3.jpg">
+				    <img src="../img/curtainImg/wall4.jpg">
+				</div>
+			</div>
+			
+			<div class="boxOne" style="display: none;">
+				<div class="img1">
+				    <img src="../img/curtainImg/wall5.jpg">
+				    <img src="../img/curtainImg/wall6.jpg">
+				    <img src="../img/curtainImg/wall5.jpg">
+				
+				</div>
+				<div class="img1">
+				    <img src="../img/curtainImg/wall6.jpg">
+				    <img src="../img/curtainImg/wall5.jpg">
+				    <img src="../img/curtainImg/wall6.jpg">
+				</div>
+			</div>
+			
+			<div class="boxOne" style="display: none;">
+				<div class="img1">
+				    <img src="../img/curtainImg/wall7.jpg">
+				    <img src="../img/curtainImg/wall8.jpg">
+				    <img src="../img/curtainImg/wall7.jpg">
+				
+				</div>
+				<div class="img1">
+				    <img src="../img/curtainImg/wall8.jpg">
+				    <img src="../img/curtainImg/wall7.jpg">
+				    <img src="../img/curtainImg/wall8.jpg">
+				</div>
+			</div>
+		</div>
+        <h2>热门资讯</h2>
+        <h4>NEWS CENTER</h4>
+        <h5>————当季热门————</h5>
+        <div style="height: 50px;"></div>
+        <div class="dier">
+            
+			<img src="../img/curtainImg/wall7.jpg">
+				
+			
+            <div class="left">
+                <ul>
+                    <li style="background-color: #364352;">
+                        <p class="one" style="color: #EBECED;">01</p>
+                        <div class="two">
+                            <p style="color: #EBECED;">伊梵克集团成立</p>
+                            <p>伊梵克集团正式成立，一家专注窗帘行业17年的工厂</p>
+                        </div>
+                        <div class="three">
+                            <p style="color: #EBECED;">24</p>
+                            <p style="color: #EBECED;">2023-5</p>
+                        </div>
+                    </li>
+                    <li style="background-color: #DBE4EF;">
+                        <p class="one">02</p>
+                        <div class="two">
+                            <p>新品窗帘研发完毕！</p>
+                            <p>美感是给与一个人最直接的影响，全新款式，全新的美感...</p>
+                        </div>
+                        <div class="three">
+                            <p>09</p>
+                            <p>2023-5</p>
+                        </div>
+                    </li>
+                    <li style="background-color: #DBE4EF;">
+                        <p class="one">03</p>
+                        <div class="two">
+                            <p>HELLO WORLD</p>
+                            <p>你好，世界，good moring world...</p>
+                        </div>
+                        <div class="three">
+                            <p>01</p>
+                            <p>2023-5</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+	<div class="bottom-txt">
+		
+		<div>
+			<div>
+				<span>版权所有 © 湖南慕兰迪科技有限公司</span>
+				<span style="cursor: pointer;" onclick='window.location.href="https:\\\\map.qq.com/poi/?sm=10178766673764810894&keyfrom=3"'>总部地址：湘潭市雨湖区先锋村村委会伊梵克集团</span>
+			</div>
+			<div>
+				<span>IP备案：*******************</span>
+				<span>XX公网安备：****************</span>
+			</div>
+		</div>
+		
+		<div style="display: flex; flex-direction: column; align-items: center;">
+			<span>了解更多共享理念，请关注我们微信小程序</span>
+			<div>
+				<img src="../img/minixcx.png"/>
+				<img src="../img/minixcx.png"/>
+			</div>
+		</div>
+	</div>
+	<script>
+		var boxOne = document.getElementsByClassName("boxOne");
+		var ulli = document.getElementsByClassName("ulli");
+		newbox = function(num){
+			// alert(num)
+			if(num != 4){
+				boxOne[0].style.display="none"
+				boxOne[1].style.display="none"
+				boxOne[2].style.display="none"
+				boxOne[3].style.display="none"
+				boxOne[num].style.display = "block"
+				
+				ulli[0].classList.remove("colorful")
+				ulli[1].classList.remove("colorful")
+				ulli[2].classList.remove("colorful")
+				ulli[3].classList.remove("colorful")
+				ulli[num].classList.add("colorful")
+			}else{
+				alert("敬请期待，更多详情请关注我们的微信小程序及公众号")
+			}
+		}
+	</script>
+</body>
+
+</html>
+
+
+
