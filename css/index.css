@@ -1,0 +1,264 @@
+*{
+	padding: 0;
+	margin: 0;
+	
+}
+::-webkit-scrollbar {
+	display: none;
+}
+.bg {
+	background: url("../img/back.jpg")
+		no-repeat center center/cover;
+	min-width: 100vw;
+	width: 100vw;
+	transition: 0.6s;
+	height: 100vh;
+	z-index: -1;
+	filter: blur(0px);
+}
+
+.bgIcon{
+	right: 1.625rem;
+	position: absolute;
+	top: 30%;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.bgIcon img{
+	cursor: pointer;
+	opacity: 0.5;
+	transition: 0.3s;
+	margin: 1.625rem 0.628rem;
+	width: 3.125rem;
+	height: 3.125rem;
+}
+
+.bgIcon img:hover{
+	opacity: 1;
+	
+}
+
+.bgIconTxt{
+	color: #fff;
+	right: 5.525rem;
+	position: absolute;
+	top: 30%;
+	display: flex;
+	flex-direction: column;
+}
+
+.bgIconTxt div{
+	border-radius: 10px 0 0 10px;
+	background-color: rgba(0, 0, 0, 0.4);
+	cursor: pointer;
+	text-indent: 1rem;
+	/* padding-left: 1.25rem; */
+	line-height: 3.15rem;
+	transition: 0.3s ease;
+	margin: 1.625rem 0;
+	width: 0rem;
+	overflow: hidden;
+	height: 3.15rem;
+}
+
+.up{
+	margin-top: -100vh;
+}
+
+.text{
+	text-align: center;
+	width: 31.25rem;
+	position: absolute;
+	top: 45%;
+	margin-left: calc(50% - 250px);
+}
+.loading-text {
+	font-size: 50px;
+	color: #fff;
+}
+
+.font-text{
+	color: #000; 
+	font-size: 30px;
+}
+
+.btn-box{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.btn {
+	position: absolute;
+	margin-top: -12.5rem;
+	font-weight: 600;
+	border: 0;
+	background-color: #fff;
+	color: #666;
+	transition: 0.3s;
+	padding: 15px 20px;
+	cursor: pointer;
+}
+
+.btn:hover {
+	font-weight: 500 ;
+	opacity: 0.7;
+	
+}
+
+
+:root {
+  --left-bg-color: rgba(248, 141, 80, 0.2);
+  --right-bg-color: rgba(43, 43, 43, 0.3);
+  --left-btn-hover-color: rgba(248, 141, 80, 0.8);
+  --right-btn-hover-color: rgba(43, 43, 43, 0.9);
+  --hover-width: 75%;
+  --other-width: 25%;
+  --speed: 1000ms;
+}
+
+.screen {
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.btn-buy {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  color: #fff;
+  border: #fff solid 0.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 15rem;
+  padding: 1.5rem;
+}
+
+.split.left .btn-buy:hover {
+  background-color: var(--left-btn-hover-color);
+  border-color: var(--left-btn-hover-color);
+}
+
+.split.right .btn-buy:hover {
+  background-color: var(--right-btn-hover-color);
+  border-color: var(--right-btn-hover-color);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #333;
+}
+
+.split {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.split.left {
+  left: 0;
+  background: url("../img/itemImg/boxTwo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.split.left::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--left-bg-color);
+}
+
+.split.right {
+  right: 0;
+  background: url("../img/itemImg/boxOne.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.split.right::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--right-bg-color);
+}
+
+.split.right,
+.split.left,
+.split.right::before,
+.split.left::before {
+  transition: all var(--speed) ease-in-out;
+}
+
+.hover-left .left {
+  width: var(--hover-width);
+}
+
+.hover-left .right {
+  width: var(--other-width);
+}
+
+.hover-right .right {
+  width: var(--hover-width);
+}
+
+.hover-right .left {
+  width: var(--other-width);
+}
+
+@media (max-width: 800px) {
+  h1 {
+	font-size: 2rem;
+	top: 30%;
+  }
+
+  .btn-buy {
+	padding: 1.2rem;
+	width: 12rem;
+  }
+}
+
+.bottom-text{
+	padding: 0.625rem;
+	text-align: center;
+	font-size: 13px;
+	color: #fff;
+	width: 100%;
+	position: relative;
+	top: 90vh;
+	background-color: rgba(0, 0, 0, 0.8);
+	height: 6.75rem;
+}
+
+.bottom-text div{
+	margin: 8px;
+}
+.bottom-text div span a{
+	color: #fff;
+}
+.bottom-text div span{
+	margin: 0 10px;
+}
